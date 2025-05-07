@@ -1,0 +1,339 @@
+<!DOCTYPE HTML>
+<html xml:lang="zh-CN" lang="zh-CN">
+
+<head>
+        <link rel="canonical" href="https://vpnforchrome.github.io/news/article-112301.htm" />
+    <title>完全解析vmess：使用与配置指南</title>
+        <meta name="description" content="在如今的互联网时代，网络对我们日常生活的影响越来越大。无论是为了绕过网络限制，还是为了更好地保护个人隐私，用户对互联网连接的要求日渐严格和多元化。在此背景下，vmess作为一种基于V2Ray的代理协议" />
+    
+    <meta name="author" content="VPN for Chrome节点教程站">
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://vpnforchrome.github.io/news/article-112301.htm" />
+    <meta property="og:site_name" content="VPN for Chrome节点教程站" />
+    <meta property="og:title" content="完全解析vmess：使用与配置指南" />
+    <meta property="og:image" content="https://vpnforchrome.github.io/uploads/20240412/8a51294aeb6262b8a6fee3753ee43d0d.webp" />
+        <meta property="og:release_date" content="2025-05-06T08:43:58" />
+    <meta property="og:updated_time" content="2025-05-06T08:43:58" />
+        <meta property="og:description" content="在如今的互联网时代，网络对我们日常生活的影响越来越大。无论是为了绕过网络限制，还是为了更好地保护个人隐私，用户对互联网连接的要求日渐严格和多元化。在此背景下，vmess作为一种基于V2Ray的代理协议" />
+        
+    <link href="/assets/website/css/clashv2rayfree/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!-- Custom Theme files -->
+    <link href="/assets/website/css/clashv2rayfree/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link rel="stylesheet" href="/assets/website/css/G.css" />
+    <!-- Custom Theme files -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="/assets/website/img/clashv2rayfree/favicon.ico" type="image/x-icon"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script type="application/x-javascript">
+    addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+
+    function hideURLbar() { window.scrollTo(0, 1); }
+    </script>
+    <!--Google Fonts-->
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,500,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
+    <!--google fonts-->
+    <script src="/assets/website/js/frontend/clashv2rayfree/jquery-1.11.0.min.js"></script>
+    <script src="/assets/website/js/frontend/clashv2rayfree/bootstrap.min.js"></script>
+
+    <meta name="applicable-device" content="pc,mobile" />
+    <meta name="renderer" content="webkit" />
+    <meta name="force-rendering" content="webkit" />
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta name="robots" content="max-image-preview:large" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="完全解析vmess：使用与配置指南">
+    <meta name="format-detection" content="telephone=no">
+
+    <link rel="dns-prefetch" href="https:/www.googletagmanager.com">
+    <link rel="dns-prefetch" href="https://www.googleadservices.com">
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+    <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com">
+    <link rel="dns-prefetch" href="https://cm.g.doubleclick.net">
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LT6F2YS0CH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-LT6F2YS0CH');
+</script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3332997411212854"
+     crossorigin="anonymous"></script>
+</head>
+
+<body data-page="detail">
+        <!--header-top start here-->
+    <div class="top-header">
+    </div>
+    <!--header-top end here-->
+    <!--header start here-->
+    <!-- NAVBAR
+		================================================== -->
+    <div class="header w3l">
+        <div class="fixed-header">
+            <div class="navbar-wrapper">
+                <div class="container">
+                    <nav class="navbar navbar-inverse navbar-static-top">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <div class="logo">
+                                                                <a class="navbar-brand" href="/">VPN for Chrome</a>
+                                                            </div>
+                        </div>
+                        <div id="navbar" class="navbar-collapse collapse">
+                            <nav class="cl-effect-16" id="cl-effect-16">
+                                <ul class="nav navbar-nav">
+                                                                        <li>
+                                        <a href="/">首页</a>
+                                    </li>
+                                                                        <li>
+                                        <a href="/paid-subscribe/">推荐机场</a>
+                                    </li>
+                                                                        <li>
+                                        <a href="/news/">新闻资讯</a>
+                                    </li>
+                                                                        <li>
+                                        <a href="/client.htm">客户端</a>
+                                    </li>
+                                                                    </ul>
+                            </nav>
+                        </div>
+                        <div class="clearfix"> </div>
+                    </nav>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+    </div>
+    <!--header end here-->
+    <!--about strat here-->
+    <div class="about">
+        <div class="container">
+            <div class="about-main">
+                <div class="row">
+                    <div class="col-md-9">
+                        <ol class="breadcrumb">
+                          <li><a href="/">首页</a></li>
+                          <li><a href="/news/">新闻资讯</a></li>
+                          <li class="active">正文</li>
+                        </ol>
+                        <div class="about-top">
+                            <h1>完全解析vmess：使用与配置指南</h1>
+                        </div>
+                        <div class="about-bottom">
+                                            <input type="hidden" id="share-website-info" data-name="Clash Node官网订阅站" data-url="https://clashnode.github.io">
+                <div class="xcblog-blog-detail xcblog-blog-detail-defined">
+                    
+<p data-start="21" data-end="208" class="">在如今的互联网时代，网络对我们日常生活的影响越来越大。无论是为了绕过网络限制，还是为了更好地保护个人隐私，用户对互联网连接的要求日渐严格和多元化。在此背景下，vmess作为一种基于V2Ray的代理协议，越来越受到全球用户的青睐。它不仅能帮助用户轻松实现科学上网，还能够有效保护用户的在线隐私。本文将对vmess进行全面解析，帮助用户更好地理解、使用和配置这一强大的代理工具。</p>
+<h2 data-start="210" data-end="222" class="">什么是vmess？</h2>
+<p data-start="224" data-end="343" class="">vmess是一种基于V2Ray的代理协议，主要用于在不同网络之间传递数据，帮助用户绕过网络限制并保护个人隐私。它通过V2Ray提供的加密功能，实现数据的安全传输。与其他代理协议相比，vmess在安全性、隐私保护和灵活性方面表现得尤为突出。</p>
+<h3 data-start="345" data-end="360" class="">vmess的基本特点：</h3>
+<ol data-start="362" data-end="641">
+<li data-start="362" data-end="435" class="" style="">
+<p data-start="365" data-end="435" class=""><strong data-start="365" data-end="373">高安全性</strong>：vmess协议基于V2Ray的加密算法，可以有效防止数据被泄露或篡改。它能够有效保护用户的上网活动，避免信息被追踪或监控。</p>
+</li>
+<li data-start="439" data-end="507" class="" style="">
+<p data-start="442" data-end="507" class=""><strong data-start="442" data-end="449">灵活性</strong>：与一些简单的代理协议（如Shadowsocks）相比，vmess更具灵活性，可以用于复杂的网络环境中，适应性更强。</p>
+</li>
+<li data-start="509" data-end="579" class="" style="">
+<p data-start="512" data-end="579" class=""><strong data-start="512" data-end="520">无缝连接</strong>：vmess协议通过建立加密隧道的方式传输数据，整个过程对用户是透明的，用户只需要按正确的配置进行连接，便可顺畅上网。</p>
+</li>
+<li data-start="581" data-end="641" class="" style="">
+<p data-start="584" data-end="641" class=""><strong data-start="584" data-end="594">多种协议支持</strong>：vmess不仅支持HTTP和SOCKS5协议，还支持多种加密方式，适用于各种复杂的网络需求。</p>
+</li>
+</ol>
+<h2 data-start="643" data-end="656" class="">vmess的工作原理</h2>
+<p data-start="658" data-end="703" class="">vmess的工作原理基于客户端和服务器之间的加密隧道建立。以下是vmess的基本工作流程：</p>
+<ol data-start="705" data-end="866">
+<li data-start="705" data-end="756" class="" style="">
+<p data-start="708" data-end="756" class=""><strong data-start="708" data-end="718">建立加密隧道</strong>：客户端与服务器通过V2Ray协议建立一个加密的隧道，这个隧道用于传输数据。</p>
+</li>
+<li data-start="760" data-end="818" class="" style="">
+<p data-start="763" data-end="818" class=""><strong data-start="763" data-end="774">数据加密与传输</strong>：数据通过加密算法进行加密后，通过该隧道传输到目的地。整个过程保证数据的隐私性与安全性。</p>
+</li>
+<li data-start="820" data-end="866" class="" style="">
+<p data-start="823" data-end="866" class=""><strong data-start="823" data-end="832">接收并解密</strong>：接收端接收到加密的数据后，使用相同的算法进行解密，最终呈现给用户。</p>
+</li>
+</ol>
+<p data-start="868" data-end="939" class="">vmess协议的优势在于，它不仅提供了高效的加密功能，还能帮助用户突破网络封锁，访问被限制的网站和服务，尤其适合需要保护隐私和绕过审查的用户。</p>
+<h2 data-start="941" data-end="954" class="">如何使用vmess？</h2>
+<h3 data-start="956" data-end="974" class="">第一步：安装V2Ray客户端</h3>
+<p data-start="976" data-end="1064" class="">要使用vmess协议，首先需要安装V2Ray客户端。V2Ray是支持vmess协议的代理工具，它支持多平台，包括Windows、Linux、MacOS等。以下是安装的基本步骤：</p>
+<ol data-start="1066" data-end="1259">
+<li data-start="1066" data-end="1109" class="" style="">
+<p data-start="1069" data-end="1109" class=""><strong data-start="1069" data-end="1082">访问V2Ray官网</strong>：进入V2Ray的官方网站下载相应平台的客户端安装包。</p>
+</li>
+<li data-start="1114" data-end="1198" class="" style="">
+<p data-start="1117" data-end="1198" class=""><strong data-start="1117" data-end="1127">选择操作系统</strong>：根据您的操作系统版本，选择合适的客户端安装包。例如，Windows用户可以选择V2Ray的Windows版本，MacOS用户选择Mac版本。</p>
+</li>
+<li data-start="1200" data-end="1259" class="" style="">
+<p data-start="1203" data-end="1259" class=""><strong data-start="1203" data-end="1215">安装并启动客户端</strong>：下载完成后，按照安装步骤完成安装。安装过程中，请根据提示进行设置，确保客户端正确安装。</p>
+</li>
+</ol>
+<h3 data-start="1261" data-end="1278" class="">第二步：配置vmess链接</h3>
+<p data-start="1280" data-end="1373" class="">配置vmess链接是连接V2Ray客户端与服务器的关键步骤。为了成功连接，您需要获取一个有效的vmess链接，这个链接通常由您的VPN服务提供商或服务器提供。vmess链接的格式通常是：</p>
+<pre class="overflow-visible!" data-start="1375" data-end="1401"><div class="contain-inline-size rounded-md border-[0.5px] border-token-border-medium relative bg-token-sidebar-surface-primary"><div class="flex items-center text-token-text-secondary px-4 py-2 text-xs font-sans justify-between h-9 bg-token-sidebar-surface-primary dark:bg-token-main-surface-secondary select-none rounded-t-[5px]">cpp</div><div class="sticky top-9"><div class="absolute end-0 bottom-0 flex h-9 items-center pe-2"><div class="bg-token-sidebar-surface-primary text-token-text-secondary dark:bg-token-main-surface-secondary flex items-center rounded-sm px-2 font-sans text-xs"><span class="" data-state="closed"></span><span class="" data-state="closed"></span></div></div></div><div class="overflow-y-auto p-4" dir="ltr"><code class="whitespace-pre!"><span><span>vmess:</span><span><span class="hljs-comment">//[特定格式的字符串]</span></span><span>
+</span></span></code></div></div></pre>
+<p data-start="1403" data-end="1466" class="">此链接包含了服务器地址、端口、加密方式、用户ID等信息。在V2Ray客户端中配置vmess链接时，您需要按照以下步骤进行操作：</p>
+<ol data-start="1468" data-end="1618">
+<li data-start="1468" data-end="1528" class="" style="">
+<p data-start="1471" data-end="1528" class=""><strong data-start="1471" data-end="1481">创建配置文件</strong>：在V2Ray客户端中，找到“配置文件”或“Profile”选项，创建一个新的vmess配置。</p>
+</li>
+<li data-start="1530" data-end="1582" class="" style="">
+<p data-start="1533" data-end="1582" class=""><strong data-start="1533" data-end="1543">填写配置信息</strong>：根据您的vmess链接，填写服务器地址、端口号、用户ID以及其他相关配置项。</p>
+</li>
+<li data-start="1584" data-end="1618" class="" style="">
+<p data-start="1587" data-end="1618" class=""><strong data-start="1587" data-end="1596">保存并应用</strong>：保存配置文件，并确保客户端应用了这些配置。</p>
+</li>
+</ol>
+<h3 data-start="1620" data-end="1632" class="">第三步：启动连接</h3>
+<p data-start="1634" data-end="1731" class="">完成配置后，点击“连接”按钮，V2Ray客户端会尝试连接到指定的服务器。成功连接后，您就可以访问网络并监测连接状态。检查客户端的连接状态是否显示为“已连接”，如果成功连接，您就可以开始科学上网。</p>
+<h2 data-start="1733" data-end="1756" class="">vmess与Shadowsocks的区别</h2>
+<p data-start="1758" data-end="1819" class="">很多人可能会把vmess与Shadowsocks相提并论，毕竟它们都是广泛使用的代理协议，但它们之间仍然存在一些重要区别：</p>
+<h3 data-start="1821" data-end="1831" class="">1. 安全性</h3>
+<ul data-start="1833" data-end="1965">
+<li data-start="1833" data-end="1892" class="" style="">
+<p data-start="1835" data-end="1892" class=""><strong data-start="1835" data-end="1844">vmess</strong>：vmess协议使用更复杂的加密算法，提供更强的安全性和隐私保护，特别适合需要高隐私保护的用户。</p>
+</li>
+<li data-start="1893" data-end="1965" class="" style="">
+<p data-start="1895" data-end="1965" class=""><strong data-start="1895" data-end="1910">Shadowsocks</strong>：Shadowsocks虽然也是一个加密的代理协议，但其加密方式较为简单，因此安全性相较于vmess稍逊一筹。</p>
+</li>
+</ul>
+<h3 data-start="1967" data-end="1981" class="">2. 灵活性与复杂度</h3>
+<ul data-start="1983" data-end="2123">
+<li data-start="1983" data-end="2062" class="" style="">
+<p data-start="1985" data-end="2062" class=""><strong data-start="1985" data-end="1994">vmess</strong>：vmess协议更加灵活，支持多种加密方式和协议，适合复杂的网络环境和需求。它在配置上可能稍微复杂，但为用户提供了更多的控制和选择空间。</p>
+</li>
+<li data-start="2063" data-end="2123" class="" style="">
+<p data-start="2065" data-end="2123" class=""><strong data-start="2065" data-end="2080">Shadowsocks</strong>：Shadowsocks相对简单易用，适合轻量级的网络需求，尤其是需要快速上网的用户。</p>
+</li>
+</ul>
+<h3 data-start="2125" data-end="2138" class="">3. 网络绕过能力</h3>
+<ul data-start="2140" data-end="2275">
+<li data-start="2140" data-end="2202" class="" style="">
+<p data-start="2142" data-end="2202" class=""><strong data-start="2142" data-end="2151">vmess</strong>：vmess具有更强的网络绕过能力，可以突破更为严格的防火墙和网络封锁，尤其适合审查较严格的地区使用。</p>
+</li>
+<li data-start="2203" data-end="2275" class="" style="">
+<p data-start="2205" data-end="2275" class=""><strong data-start="2205" data-end="2220">Shadowsocks</strong>：Shadowsocks虽然也能够绕过一些网络封锁，但在某些严苛的网络环境中，它的绕过能力可能不如vmess。</p>
+</li>
+</ul>
+<h2 data-start="2277" data-end="2286" class="">常见问题解答</h2>
+<h3 data-start="2288" data-end="2309" class="">1. 如何修复vmess连接错误？</h3>
+<p data-start="2311" data-end="2352" class="">vmess连接错误是用户在使用过程中常遇到的问题。通常，这些错误与以下几方面有关：</p>
+<ul data-start="2354" data-end="2477">
+<li data-start="2354" data-end="2391" class="" style="">
+<p data-start="2356" data-end="2391" class=""><strong data-start="2356" data-end="2370">检查服务器地址与端口</strong>：确保您输入的服务器地址和端口号正确无误。</p>
+</li>
+<li data-start="2392" data-end="2439" class="" style="">
+<p data-start="2394" data-end="2439" class=""><strong data-start="2394" data-end="2404">配置文件错误</strong>：检查客户端配置文件，确保所有字段正确填写，特别是用户ID和加密方式。</p>
+</li>
+<li data-start="2440" data-end="2477" class="" style="">
+<p data-start="2442" data-end="2477" class=""><strong data-start="2442" data-end="2450">网络问题</strong>：检查本地网络连接是否正常，确保您的网络没有其他问题。</p>
+</li>
+</ul>
+<h3 data-start="2479" data-end="2498" class="">2. 如何加速vmess连接？</h3>
+<p data-start="2500" data-end="2522" class="">提高vmess连接速度可以通过以下几种方式：</p>
+<ul data-start="2524" data-end="2657">
+<li data-start="2524" data-end="2562" class="" style="">
+<p data-start="2526" data-end="2562" class=""><strong data-start="2526" data-end="2536">选择优质节点</strong>：选择低延迟的节点，特别是国内节点，能减少连接延迟。</p>
+</li>
+<li data-start="2563" data-end="2606" class="" style="">
+<p data-start="2565" data-end="2606" class=""><strong data-start="2565" data-end="2576">使用CDN加速</strong>：使用内容分发网络（CDN）可以加速数据传输，提升连接速度。</p>
+</li>
+<li data-start="2607" data-end="2657" class="">
+<p data-start="2609" data-end="2657" class=""><strong data-start="2609" data-end="2622">调整V2Ray设置</strong>：调整V2Ray客户端中的加密方式和协议，避免使用过于复杂的加密算法。</p>
+</li>
+</ul>
+<h3 data-start="2659" data-end="2683" class="">3. vmess与V2Ray有什么关系？</h3>
+<p data-start="2685" data-end="2761" class="">V2Ray是一个完整的网络代理工具，而vmess是V2Ray支持的代理协议之一。V2Ray支持多种代理协议，vmess只是其中一个较为常用且强大的协议。</p>
+<h2 data-start="2763" data-end="2768" class="">小结</h2>
+<p data-start="2770" data-end="2956" class="">vmess作为一种基于V2Ray的代理协议，不仅能够为用户提供更高的安全性，还能帮助用户突破地理限制，保护隐私，实现自由上网。通过本文的讲解，相信您已经掌握了vmess的基本使用方法与配置技巧，并了解了如何解决常见问题。无论您是希望保护个人隐私，还是希望在受到限制的网络环境中自由浏览，vmess都是一个强大且值得信赖的选择。掌握它，您将能够拥有更加安全、流畅的上网体验。</p>                </div>
+                <div class="clearfix"></div>
+                <div class="col-md-12 mt-5">
+                                        <p>上一个：<a href="/news/article-112299.htm">Shadowrocket电脑版全解：从安装入门到进阶配置的实用指南</a></p>
+                                        <p>下一个：<a href="/news/article-112649.htm">科学上网闪退问题深度解析与解决方案</a></p>
+                                    </div>
+                                        </div>
+
+                        
+                    </div>
+                    <div class="col-md-3">
+                        <div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">热门文章</h3>
+    </div>
+    <div class="panel-body">
+        <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
+                        <li class="py-2"><a href="/news/article-111233.htm" title="新手必看：一步步教你玩转 Newifi Mini 搭配 V2Ray 的科学上网配置全教程">新手必看：一步步教你玩转 Newifi Mini 搭配 V2Ray 的科学上网配置全教程</a></li>
+                        <li class="py-2"><a href="/news/article-101251.htm" title="解决V2Ray手机翻墙无法连接的问题：全面指南与解决方案">解决V2Ray手机翻墙无法连接的问题：全面指南与解决方案</a></li>
+                        <li class="py-2"><a href="/news/article-99890.htm" title="手机上Clash的含义及应用详解：全面剖析网络代理工具">手机上Clash的含义及应用详解：全面剖析网络代理工具</a></li>
+                        <li class="py-2"><a href="/news/article-106077.htm" title="iPhone 7用户必看：科学上网详细攻略与实用指南">iPhone 7用户必看：科学上网详细攻略与实用指南</a></li>
+                        <li class="py-2"><a href="/news/article-111945.htm" title="Clash绕过大陆网络封锁的全面指南">Clash绕过大陆网络封锁的全面指南</a></li>
+                        <li class="py-2"><a href="/news/article-108709.htm" title="深度解析V2Ray云村：使用指南与配置破解">深度解析V2Ray云村：使用指南与配置破解</a></li>
+                        <li class="py-2"><a href="/news/article-109543.htm" title="如何使用V2Ray突破版权限制：全面指南">如何使用V2Ray突破版权限制：全面指南</a></li>
+                        <li class="py-2"><a href="/news/article-99101.htm" title="Clash探索者购买指南：详细步骤与常见问题解答">Clash探索者购买指南：详细步骤与常见问题解答</a></li>
+                        <li class="py-2"><a href="/news/article-105252.htm" title="V2Ray的法律风险及合规使用指南：如何安全使用翻墙工具">V2Ray的法律风险及合规使用指南：如何安全使用翻墙工具</a></li>
+                        <li class="py-2"><a href="/news/article-111949.htm" title="手机科学上网安装详细指南：畅享全球网络自由">手机科学上网安装详细指南：畅享全球网络自由</a></li>
+                    </ul>
+    </div>
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">归纳</h3>
+    </div>
+    <div class="panel-body">
+        <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
+                        <li class="py-2">
+                <h4><span class="badge" style="float: right;">14</span> <a href="/date/2025-05/" title="2025-05 归档">2025-05</a></h4>
+            </li>
+                        <li class="py-2">
+                <h4><span class="badge" style="float: right;">28</span> <a href="/date/2025-04/" title="2025-04 归档">2025-04</a></h4>
+            </li>
+                    </ul>
+    </div>
+</div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--about end here-->
+        <!--copy rights start here-->
+    <div class="copy-rights">
+        <div class="container">
+            <div class="copy-rights-main">
+                                    <p>
+                                                <a href="/">首页</a> |
+                                                <a href="/paid-subscribe/">推荐机场</a> |
+                                                <a href="/news/">新闻资讯</a> |
+                                                <a href="/client.htm">客户端</a> |
+                                                <a href="/about-us.htm">关于我们</a> |
+                        <a href="/disclaimer.htm">免责申明</a> |
+                        <a href="/privacy.htm">隐私申明</a> |
+                        <a href="/sitemap.xml">网站地图</a>
+                    </p>
+                <p>
+                    VPN for Chrome节点教程站 版权所有
+                    <br />
+                    Powered by WordPress
+                </p>
+            </div>
+        </div>
+    </div>
+    <script src="https://www.freeclashnode.com/assets/js/frontend/invite-url.js"></script><script src="/assets/website/js/frontend/G.js"></script>
+</body>
+
+</html>

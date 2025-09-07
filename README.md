@@ -1,4 +1,4 @@
-# VPN for Chrome | 9月1日19.4M/S|免费SSR/V2ray/Clash/Shadowrocket订阅机场  更新时间 2025-09-01 09:50:52
+# VPN for Chrome | 9月7日19.3M/S|免费Shadowrocket/Clash/SSR/V2ray订阅机场  更新时间 2025-09-07 08:02:55
 所有免费clash节点都爬取自网络，请勿用于非法用途 。节点地址：<a href="https://vpnforchrome.github.io" target="_blank">点击跳转</a>
 
 ## clash使用教程：
@@ -9,23 +9,23 @@
 
 ### Clash订阅链接
 
-- https://vpnforchrome.github.io/uploads/2025/09/0-20250901.yaml
-- https://vpnforchrome.github.io/uploads/2025/09/1-20250901.yaml
-- https://vpnforchrome.github.io/uploads/2025/09/2-20250901.yaml
-- https://vpnforchrome.github.io/uploads/2025/09/3-20250901.yaml
-- https://vpnforchrome.github.io/uploads/2025/09/4-20250901.yaml
+- https://vpnforchrome.github.io/uploads/2025/09/0-20250907.yaml
+- https://vpnforchrome.github.io/uploads/2025/09/1-20250907.yaml
+- https://vpnforchrome.github.io/uploads/2025/09/2-20250907.yaml
+- https://vpnforchrome.github.io/uploads/2025/09/3-20250907.yaml
+- https://vpnforchrome.github.io/uploads/2025/09/4-20250907.yaml
 
 ### V2ray订阅链接
 
-- https://vpnforchrome.github.io/uploads/2025/09/0-20250901.txt
-- https://vpnforchrome.github.io/uploads/2025/09/1-20250901.txt
-- https://vpnforchrome.github.io/uploads/2025/09/2-20250901.txt
-- https://vpnforchrome.github.io/uploads/2025/09/3-20250901.txt
-- https://vpnforchrome.github.io/uploads/2025/09/4-20250901.txt
+- https://vpnforchrome.github.io/uploads/2025/09/0-20250907.txt
+- https://vpnforchrome.github.io/uploads/2025/09/1-20250907.txt
+- https://vpnforchrome.github.io/uploads/2025/09/2-20250907.txt
+- https://vpnforchrome.github.io/uploads/2025/09/3-20250907.txt
+- https://vpnforchrome.github.io/uploads/2025/09/4-20250907.txt
 
 ### Sing-box订阅链接
 
-- https://vpnforchrome.github.io/uploads/2025/09/20250901.json
+- https://vpnforchrome.github.io/uploads/2025/09/20250907.json
 
 ## 更多clash节点订阅 ：
 

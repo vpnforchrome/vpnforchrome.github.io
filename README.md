@@ -1,4 +1,4 @@
-# VPN for Chrome | 12月7日22.5M/S|免费V2ray节点/Clash节点/SSR节点/Shadowrocket节点/Singbox节点订阅机场  更新时间 2025-12-07 10:06:56
+# VPN for Chrome | 12月15日21.9M/S|免费V2ray节点/Singbox节点/Shadowrocket节点/Clash节点/SSR节点订阅机场  更新时间 2025-12-15 08:51:12
 所有免费clash节点都爬取自网络，请勿用于非法用途 。节点地址：<a href="https://vpnforchrome.github.io" target="_blank">点击跳转</a>
 
 ## clash使用教程：
@@ -9,23 +9,23 @@
 
 ### 免费Clash节点订阅链接
 
-- https://vpnforchrome.github.io/uploads/2025/12/0-20251207.yaml
-- https://vpnforchrome.github.io/uploads/2025/12/1-20251207.yaml
-- https://vpnforchrome.github.io/uploads/2025/12/2-20251207.yaml
-- https://vpnforchrome.github.io/uploads/2025/12/3-20251207.yaml
-- https://vpnforchrome.github.io/uploads/2025/12/4-20251207.yaml
+- https://vpnforchrome.github.io/uploads/2025/12/0-20251215.yaml
+- https://vpnforchrome.github.io/uploads/2025/12/1-20251215.yaml
+- https://vpnforchrome.github.io/uploads/2025/12/2-20251215.yaml
+- https://vpnforchrome.github.io/uploads/2025/12/3-20251215.yaml
+- https://vpnforchrome.github.io/uploads/2025/12/4-20251215.yaml
 
 ### 免费V2ray节点订阅链接
 
-- https://vpnforchrome.github.io/uploads/2025/12/0-20251207.txt
-- https://vpnforchrome.github.io/uploads/2025/12/1-20251207.txt
-- https://vpnforchrome.github.io/uploads/2025/12/2-20251207.txt
-- https://vpnforchrome.github.io/uploads/2025/12/3-20251207.txt
-- https://vpnforchrome.github.io/uploads/2025/12/4-20251207.txt
+- https://vpnforchrome.github.io/uploads/2025/12/0-20251215.txt
+- https://vpnforchrome.github.io/uploads/2025/12/1-20251215.txt
+- https://vpnforchrome.github.io/uploads/2025/12/2-20251215.txt
+- https://vpnforchrome.github.io/uploads/2025/12/3-20251215.txt
+- https://vpnforchrome.github.io/uploads/2025/12/4-20251215.txt
 
 ### 免费Sing-box节点订阅链接
 
-- https://vpnforchrome.github.io/uploads/2025/12/20251207.json
+- https://vpnforchrome.github.io/uploads/2025/12/20251215.json
 
 ## 更多Clash节点订阅 ：
 

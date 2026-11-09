@@ -315,37 +315,13 @@ SS可运行在Windows、macOS、Linux、Android、iOS甚至部分路由器系统
 <div class="clearfix"></div>
 <div class="col-md-12 mt-5">
         <p>上一个：<a href="/free-nodes/share-vpn-2026-11-1.htm">VPN for Chrome | 11月1日21.9M/S|免费V2ray节点/Trojan节点/Clash节点/Singbox节点/SSR节点/Shadowrocket节点订阅机场</a></p>
+        <p>下一个：<a href="/free-nodes/share-vpn-2026-11-3.htm">VPN for Chrome | 11月3日22.2M/S|免费SSR节点/Shadowrocket节点/Trojan节点/Clash节点/V2ray节点/Singbox节点订阅机场</a></p>
     </div>
 <h4>FAQ</h4>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Clash 如何实现域名白名单策略？</h5></div>
-    <div class="panel-body">
-        Clash 可以通过策略组结合规则文件，将指定域名或网站加入白名单，实现直连而不经过代理节点。这样可以保证国内访问速度，同时节省节点带宽资源，提高整体网络效率。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>V2Ray 如何隐藏真实 IP？</h5></div>
-    <div class="panel-body">
-        通过启用 TLS、Reality 或 WebSocket + CDN 转发，V2Ray 可有效隐藏真实服务器 IP。这样外部监测只能看到中转节点，从而提升匿名性与安全性。<hr />    </div>
-</div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>Clash 是什么？它主要有什么用途？</h5></div>
     <div class="panel-body">
         Clash 是一个跨平台的代理客户端，支持多种代理协议，如 Vmess、Vless、Trojan 和 Shadowsocks 等。它主要用于分流管理、网络代理和科学上网，用户可以通过配置文件灵活控制网络流量，实现不同网站或应用走不同代理。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>如何为 Vmess 节点生成安全的 UUID？</h5></div>
-    <div class="panel-body">
-        UUID 应使用标准的 128 位格式，可使用系统命令如 `uuidgen` 或在线 UUID 生成器生成随机、唯一的 ID；不要使用默认或弱随机值，定期更换以降低被滥用或泄露的风险。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Quantumult X 的自动策略组如何工作？</h5></div>
-    <div class="panel-body">
-        Quantumult X 的自动策略组可根据延迟、可用性或测速结果自动选择最优节点，用户无需手动切换。可在策略组设置中开启“延迟优先”或“可用性优先”模式以优化体验。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>V2Ray 中的多入口（inbounds）配置有什么用？</h5></div>
-    <div class="panel-body">
-        V2Ray 支持多入口配置，可以同时开启 HTTP、Socks、TUN 等多种代理方式，方便不同程序接入。通过设置不同端口，用户可实现局域网共享或分离不同流量来源。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>Matsuri 可以用于 Android 吗？</h5></div>
@@ -353,19 +329,44 @@ SS可运行在Windows、macOS、Linux、Android、iOS甚至部分路由器系统
         Matsuri 主要针对桌面平台开发，目前并未推出 Android 版本。但可使用其配置文件在兼容的客户端（如 Nekobox 或 Clash Android）中加载以获得类似体验。<hr />    </div>
 </div>
 <div class="panel panel-default">
+    <div class="panel-heading"><h5>V2Ray 中的多入口（inbounds）配置有什么用？</h5></div>
+    <div class="panel-body">
+        V2Ray 支持多入口配置，可以同时开启 HTTP、Socks、TUN 等多种代理方式，方便不同程序接入。通过设置不同端口，用户可实现局域网共享或分离不同流量来源。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>V2Ray 如何隐藏真实 IP？</h5></div>
+    <div class="panel-body">
+        通过启用 TLS、Reality 或 WebSocket + CDN 转发，V2Ray 可有效隐藏真实服务器 IP。这样外部监测只能看到中转节点，从而提升匿名性与安全性。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Quantumult X 的自动策略组如何工作？</h5></div>
+    <div class="panel-body">
+        Quantumult X 的自动策略组可根据延迟、可用性或测速结果自动选择最优节点，用户无需手动切换。可在策略组设置中开启“延迟优先”或“可用性优先”模式以优化体验。<hr />    </div>
+</div>
+<div class="panel panel-default">
     <div class="panel-heading"><h5>Matsuri 日志太多如何调整日志级别？</h5></div>
     <div class="panel-body">
         在 Matsuri 或其内核配置中修改日志级别参数（如从 debug 降为 info 或 warning），同时限制日志轮转与最大文件大小。生产环境建议关闭 debug 日志以减少磁盘 I/O 与性能影响。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>V2Ray 服务器启动后提示端口被占用，该如何处理？</h5></div>
+    <div class="panel-heading"><h5>Clash 如何实现域名白名单策略？</h5></div>
     <div class="panel-body">
-        先用 netstat 或 ss 工具查看占用该端口的进程（例如 `ss -ltnp`），确认是旧进程或其他服务占用。停止占用进程或修改 V2Ray 配置端口，然后重启服务并检查防火墙规则是否开放了新端口。<hr />    </div>
+        Clash 可以通过策略组结合规则文件，将指定域名或网站加入白名单，实现直连而不经过代理节点。这样可以保证国内访问速度，同时节省节点带宽资源，提高整体网络效率。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>如何为 Vmess 节点生成安全的 UUID？</h5></div>
+    <div class="panel-body">
+        UUID 应使用标准的 128 位格式，可使用系统命令如 `uuidgen` 或在线 UUID 生成器生成随机、唯一的 ID；不要使用默认或弱随机值，定期更换以降低被滥用或泄露的风险。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>V2Ray 的 mKCP 参数如何调优以适应不稳定链路？</h5></div>
     <div class="panel-body">
-        mKCP 有多个参数如 mtu、tinterval、uplink/downlink 等，可通过降低 mtu 与增大 mtu 重试间隔来适应高丢包场景；启用 FEC 与调整窗口大小能提高容错性，最终需在实际网络环境中逐步调试获得最佳值。    </div>
+        mKCP 有多个参数如 mtu、tinterval、uplink/downlink 等，可通过降低 mtu 与增大 mtu 重试间隔来适应高丢包场景；启用 FEC 与调整窗口大小能提高容错性，最终需在实际网络环境中逐步调试获得最佳值。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>V2Ray 服务器启动后提示端口被占用，该如何处理？</h5></div>
+    <div class="panel-body">
+        先用 netstat 或 ss 工具查看占用该端口的进程（例如 `ss -ltnp`），确认是旧进程或其他服务占用。停止占用进程或修改 V2Ray 配置端口，然后重启服务并检查防火墙规则是否开放了新端口。    </div>
 </div>
 <div class="panel panel-default mt-5">
     <div class="panel-heading">
@@ -416,16 +417,16 @@ SS可运行在Windows、macOS、Linux、Android、iOS甚至部分路由器系统
     </div>
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
-                        <li class="py-2"><a href="/free-nodes/top-vpn-2026-9-13.htm" title="VPN for Chrome | 9月13日19.7M/S|免费Trojan节点/V2ray节点/Singbox节点/Shadowrocket节点/Clash节点/SSR节点订阅机场">VPN for Chrome | 9月13日19.7M/S|免费Trojan节点/V2ray节点/Singbox节点/Shadowrocket节点/Clash节点/SSR节点订阅机场</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-10-26-node-share.htm" title="VPN for Chrome | 10月26日20.3M/S|免费V2ray节点/Singbox节点/Shadowrocket节点/Trojan节点/Clash节点/SSR节点订阅机场">VPN for Chrome | 10月26日20.3M/S|免费V2ray节点/Singbox节点/Shadowrocket节点/Trojan节点/Clash节点/SSR节点订阅机场</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/free-node-subscribe-links-2026-9-17.htm" title="VPN for Chrome | 9月17日19.1M/S|免费SSR节点/V2ray节点/Shadowrocket节点/Clash节点/Singbox节点/Trojan节点订阅机场">VPN for Chrome | 9月17日19.1M/S|免费SSR节点/V2ray节点/Shadowrocket节点/Clash节点/Singbox节点/Trojan节点订阅机场</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/vpn-github-2026-10-13.htm" title="VPN for Chrome | 10月13日18M/S|免费Trojan节点/Singbox节点/Shadowrocket节点/V2ray节点/Clash节点/SSR节点订阅机场">VPN for Chrome | 10月13日18M/S|免费Trojan节点/Singbox节点/Shadowrocket节点/V2ray节点/Clash节点/SSR节点订阅机场</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/top-vpn-2026-11-9.htm" title="VPN for Chrome | 11月9日21.2M/S|免费Singbox节点/SSR节点/Trojan节点/Clash节点/Shadowrocket节点/V2ray节点订阅机场">VPN for Chrome | 11月9日21.2M/S|免费Singbox节点/SSR节点/Trojan节点/Clash节点/Shadowrocket节点/V2ray节点订阅机场</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/node-share-links-2026-10-19.htm" title="VPN for Chrome | 10月19日19.2M/S|免费Trojan节点/V2ray节点/Shadowrocket节点/Clash节点/SSR节点/Singbox节点订阅机场">VPN for Chrome | 10月19日19.2M/S|免费Trojan节点/V2ray节点/Shadowrocket节点/Clash节点/SSR节点/Singbox节点订阅机场</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-10-20-free-node-subscribe.htm" title="VPN for Chrome | 10月20日21.3M/S|免费V2ray节点/Singbox节点/SSR节点/Clash节点/Shadowrocket节点/Trojan节点订阅机场">VPN for Chrome | 10月20日21.3M/S|免费V2ray节点/Singbox节点/SSR节点/Clash节点/Shadowrocket节点/Trojan节点订阅机场</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/vpn-github-2026-10-27.htm" title="VPN for Chrome | 10月27日18.2M/S|免费Clash节点/Singbox节点/Trojan节点/V2ray节点/SSR节点/Shadowrocket节点订阅机场">VPN for Chrome | 10月27日18.2M/S|免费Clash节点/Singbox节点/Trojan节点/V2ray节点/SSR节点/Shadowrocket节点订阅机场</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/share-vpn-2026-11-3.htm" title="VPN for Chrome | 11月3日22.2M/S|免费SSR节点/Shadowrocket节点/Trojan节点/Clash节点/V2ray节点/Singbox节点订阅机场">VPN for Chrome | 11月3日22.2M/S|免费SSR节点/Shadowrocket节点/Trojan节点/Clash节点/V2ray节点/Singbox节点订阅机场</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/top-vpn-2026-10-21.htm" title="VPN for Chrome | 10月21日20.6M/S|免费Clash节点/Shadowrocket节点/SSR节点/Singbox节点/V2ray节点/Trojan节点订阅机场">VPN for Chrome | 10月21日20.6M/S|免费Clash节点/Shadowrocket节点/SSR节点/Singbox节点/V2ray节点/Trojan节点订阅机场</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/node-share-links-2026-10-15.htm" title="VPN for Chrome | 10月15日20.8M/S|免费Shadowrocket节点/SSR节点/V2ray节点/Trojan节点/Clash节点/Singbox节点订阅机场">VPN for Chrome | 10月15日20.8M/S|免费Shadowrocket节点/SSR节点/V2ray节点/Trojan节点/Clash节点/Singbox节点订阅机场</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-11-4-top-vpn-node.htm" title="VPN for Chrome | 11月4日21.7M/S|免费Shadowrocket节点/Clash节点/Singbox节点/Trojan节点/V2ray节点/SSR节点订阅机场">VPN for Chrome | 11月4日21.7M/S|免费Shadowrocket节点/Clash节点/Singbox节点/Trojan节点/V2ray节点/SSR节点订阅机场</a><hr /></li>
                         <li class="py-2"><a href="/free-nodes/vpn-github-2026-10-23.htm" title="VPN for Chrome | 10月23日18.9M/S|免费Clash节点/V2ray节点/Shadowrocket节点/Singbox节点/SSR节点/Trojan节点订阅机场">VPN for Chrome | 10月23日18.9M/S|免费Clash节点/V2ray节点/Shadowrocket节点/Singbox节点/SSR节点/Trojan节点订阅机场</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/top-vpn-2026-9-11.htm" title="VPN for Chrome | 9月11日18.1M/S|免费Singbox节点/Trojan节点/Clash节点/V2ray节点/Shadowrocket节点/SSR节点订阅机场">VPN for Chrome | 9月11日18.1M/S|免费Singbox节点/Trojan节点/Clash节点/V2ray节点/Shadowrocket节点/SSR节点订阅机场</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/node-share-links-2026-9-21.htm" title="VPN for Chrome | 9月21日22.7M/S|免费SSR节点/V2ray节点/Singbox节点/Shadowrocket节点/Clash节点/Trojan节点订阅机场">VPN for Chrome | 9月21日22.7M/S|免费SSR节点/V2ray节点/Singbox节点/Shadowrocket节点/Clash节点/Trojan节点订阅机场</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/top-vpn-2026-9-25.htm" title="VPN for Chrome | 9月25日18.3M/S|免费SSR节点/V2ray节点/Singbox节点/Trojan节点/Clash节点/Shadowrocket节点订阅机场">VPN for Chrome | 9月25日18.3M/S|免费SSR节点/V2ray节点/Singbox节点/Trojan节点/Clash节点/Shadowrocket节点订阅机场</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-9-28-free-vpn-node.htm" title="VPN for Chrome | 9月28日18.8M/S|免费Shadowrocket节点/Clash节点/Singbox节点/Trojan节点/V2ray节点/SSR节点订阅机场">VPN for Chrome | 9月28日18.8M/S|免费Shadowrocket节点/Clash节点/Singbox节点/Trojan节点/V2ray节点/SSR节点订阅机场</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-11-2-top-vpn-node.htm" title="VPN for Chrome | 11月2日22.3M/S|免费Trojan节点/V2ray节点/Clash节点/Singbox节点/SSR节点/Shadowrocket节点订阅机场">VPN for Chrome | 11月2日22.3M/S|免费Trojan节点/V2ray节点/Clash节点/Singbox节点/SSR节点/Shadowrocket节点订阅机场</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/mianfei-vpn-2026-10-29.htm" title="VPN for Chrome | 10月29日20.1M/S|免费Shadowrocket节点/Clash节点/Trojan节点/Singbox节点/V2ray节点/SSR节点订阅机场">VPN for Chrome | 10月29日20.1M/S|免费Shadowrocket节点/Clash节点/Trojan节点/Singbox节点/V2ray节点/SSR节点订阅机场</a><hr /></li>
                     </ul>
     </div>
 </div>
@@ -437,13 +438,10 @@ SS可运行在Windows、macOS、Linux、Android、iOS甚至部分路由器系统
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">2</span> <a href="/date/2026-11/" title="2026-11 归档">2026-11</a></h4>
+                <h4><span class="badge" style="float: right;">9</span> <a href="/date/2026-11/" title="2026-11 归档">2026-11</a></h4>
             </li>
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">30</span> <a href="/date/2026-10/" title="2026-10 归档">2026-10</a></h4>
-            </li>
-                        <li class="py-2">
-                <h4><span class="badge" style="float: right;">29</span> <a href="/date/2026-09/" title="2026-09 归档">2026-09</a></h4>
+                <h4><span class="badge" style="float: right;">21</span> <a href="/date/2026-10/" title="2026-10 归档">2026-10</a></h4>
             </li>
                     </ul>
     </div>
